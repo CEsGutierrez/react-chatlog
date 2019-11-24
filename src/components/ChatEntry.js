@@ -4,13 +4,24 @@ import Timestamp from './Timestamp';
 
 const ChatEntry = (props) => {
 
-  return (
-    <div>
-      <div> {props.sender} </div>
-      <div> {props.body} </div>
-      <div> <Timestamp time = {props.timeStamp} /> </div>
-    </div>
-  )
+  if (props.sender === "Vladimir") {
+    return (
+      <div className = "local">
+        <div className = "sender"> {props.sender} </div>
+        <div className = "body"> {props.body} </div>
+        <div  className = "timestamp"> <Timestamp time = {props.timeStamp} /> </div>
+      </div>
+    )
+  }
+  else {
+    return (
+      <div className = "remote">
+        <div className = "sender"> {props.sender} </div>
+        <div className = "body"> {props.body} </div>
+        <div  className = "timestamp"> <Timestamp time = {props.timeStamp} /> </div>
+      </div>
+    )
+  }
 
 }
 

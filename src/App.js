@@ -6,8 +6,6 @@ import ChatLog from './components/ChatLog'
 const App = () => {
   console.log(chatMessages);
 
-  // filler is test data used as an alternative to JSON to make sure the process catches. It follows the same format as the JSON provided in this project. 
-
   const filler = [
     {
       "sender":"Clara",
@@ -23,11 +21,7 @@ const App = () => {
       </header>
       <main>
 
-      {/* <div>
-        <ChatLog messages = {filler.messages}/>
-      </div> */}
-
-      <div>
+      <div className = "feed">
         <ChatLog messages ={chatMessages.messages}/>
       </div>
       </main>
