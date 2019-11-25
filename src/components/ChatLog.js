@@ -4,7 +4,11 @@ import ChatEntry from './ChatEntry'
 
 const ChatLog = (prop) => {
 
+  // let participants = []
+
   const messageComponents = prop.messages.map((message, i) => {
+    
+    // participants.push (<ChatEntry sender = {message.sender}/>.props.sender)
 
     return (
       <div>
@@ -16,8 +20,12 @@ const ChatLog = (prop) => {
       </div>
     );
   });
+  
+  // const master = Array.from(new Set(participants))
 
-  return messageComponents
+  // console.log(master)
+  
+  return [messageComponents]
 
 }
 

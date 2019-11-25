@@ -4,7 +4,7 @@ import Timestamp from './Timestamp';
 
 const ChatEntry = (props) => {
 
-  if (props.sender == "Vladimir") {
+  if (props.sender === "Vladimir") {
     return (
       <div className = "chat-entry local">
         <div className = "entry-name"> {props.sender} </div>
