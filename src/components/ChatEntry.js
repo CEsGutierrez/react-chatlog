@@ -7,10 +7,10 @@ const ChatEntry = (props) => {
   if (props.sender == "Vladimir") {
     return (
       <div className = "chat-entry local">
+        <div className = "entry-name"> {props.sender} </div>
         <div className =  "entry-bubble" >
-          <div className = "sender"> {props.sender} </div>
           <div className = "body"> {props.body} </div>
-          <div  className = "timestamp"> <Timestamp time = {props.timeStamp} /> </div>
+          <div  className = "entry-time"> <Timestamp time = {props.timeStamp} /> </div>
         </div>
       </div>
     )
@@ -18,10 +18,10 @@ const ChatEntry = (props) => {
   else {
     return (
       <div className = "chat-entry remote">
+        <div className = "entry-name"> {props.sender} </div>
         <div className =  "entry-bubble" >
-          <div className = "sender"> {props.sender} </div>
           <div className = "body"> {props.body} </div>
-          <div  className = "timestamp"> <Timestamp time = {props.timeStamp} /> </div>
+          <div  className = "entry-time"> <Timestamp time = {props.timeStamp} /> </div>
       </div>
       </div>
     )

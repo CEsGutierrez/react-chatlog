@@ -23,6 +23,7 @@
 .chat-entry .entry-name {
   font-size: medium;
   margin-bottom: 0.5rem;
+  font-weight: bold; /* Added boldening to text to better match example */
 }
 
 .chat-entry .entry-time {
